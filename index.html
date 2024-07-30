@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <link rel="stylesheet" href="uber.css">
@@ -57,13 +58,13 @@
         </div>
     
         <div class="price">
-        <label>Pricing</label><br>
             <label><b>Get a fare estimation</b></label><br>
-    <input type="text" placeholder="Enter pickup location"><br>
-      <input type="text" placeholder="Enter destination"> 
-    
-        <div class="mapi"><img src="map.PNG"></div>
-            </div>
+            <input type="text" id="pickupLocation" placeholder="Enter pickup location"><br>
+            <input type="text" id="destination" placeholder="Enter destination"><br>
+            <button id="estimateFare">Get Estimate</button><br>
+            <p id="fareResult"></p>
+            <div class="mapi"><img src="map.PNG"></div>
+        </div>
    <div class="reason"><img src="Reason.PNG"></div> 
     <div class="driver">
         <label>At the wheel</label><br>
@@ -86,5 +87,7 @@
             <li>Help</li>
         </ul>
     </div>
-            </body>
+    <script src="uber.js" defer></script>
+     </body>
 </html>
+   
